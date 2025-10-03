@@ -38,10 +38,6 @@ APS produces sharper textures and refined details compared to G2D2 and DPS.
 
 <img src="./assets/ffhq-imagenet-sr-gb.png" width="100%">
 
-**Quantitative comparisons**:
-
-<img src="./assets/ffhq-imagenet-sr-gb-quant.png" width="70%">
-
 ---
 
 ### General Inverse Problems (Linear + Nonlinear)
@@ -49,7 +45,6 @@ APS produces sharper textures and refined details compared to G2D2 and DPS.
 APS generalizes to multiple tasks (motion blur, HDR, nonlinear blur) with large improvements in PSNR and LPIPS.
 
 <img src="./assets/ffhq-gen-inv.png" width="100%">
-<img src="./assets/ffhq-gen-inv-quant.png" width="70%">
 
 ---
 
@@ -58,8 +53,7 @@ APS generalizes to multiple tasks (motion blur, HDR, nonlinear blur) with large 
 APS enables **training-free stylization** with a reference style image and prompt.
 
 <img src="./assets/ref-based-stylization.png" width="100%">
-<img src="./assets/ref-based-stylization-quant.png" width="50%">
-<img src="./assets/ref-based-stylization-comp.png" width="100%">
+<img src="./assets/ref-based-stylization-supp.png" width="100%">
 
 APS also supports **text-guided block inpainting**:
 
@@ -69,9 +63,11 @@ APS also supports **text-guided block inpainting**:
 
 ## ⚡ Efficiency
 
-APS demonstrates **better scaling than continuous samplers** at high resolutions, achieving strong performance with only 15 steps at 1024×1024.
+APS demonstrates **better scaling than continuous diffusion samplers** at high resolutions, achieving strong performance with only 15 steps at 1024×1024.
 
-<img src="./assets/continuous-vs-discrete.png" width="70%">
+<div align="center">
+  <img src="./assets/continuous-vs-discrete.png" width="80%">
+</div>
 
 ---
 
@@ -84,6 +80,7 @@ If you find this work useful, please cite:
   title     = {Test-Time Anchoring for Discrete Diffusion Posterior Sampling},
   author    = {Rout, L. and Lugmayr, A. and Jafarian, Y. and Varadharajn, S. and Caramanis, C. and Shakkottai, S. and Shlizerman, I.},
   journal   = {arXiv preprint arXiv:2510.02291},
-  year      = {2025}
+  year      = {2025},
+  url       = {https://arxiv.org/abs/2510.02291}     
 }
 
